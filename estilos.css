@@ -1,0 +1,113 @@
+/* CONFIGURAÇAO BODY */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CONFIGURAÇÃO HEADER */
+
+header {
+    width: 100%;
+    box-shadow: 0 0 5px black;
+}
+
+.navhead {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.lihead {
+    display: inline-block;
+    float: right;
+    padding-top: 27px;
+    padding-bottom: 15px;
+    margin-right: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.lihead2 {
+    display: inline-block;
+    font-size: 30px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* CONFIGURAÇÃO FOOTER */
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+}
+
+.lifoot {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.instaicon {
+    width: 50px;
+}
+
+.whatsicon {
+    width: 54px;
+}
+
+.locateicon {
+    width: 41px;
+}
+
+/* CONFIGURAÇÃO SECTION */
+
+section {
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 50px;
+}
+.artglassicon {
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.psec {
+    margin-top: 10px;
+}
+
+.psec2 {
+    background-color: gray;
+    margin-top: 20px;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 3px;
+}
+
+hr {
+    display: center;
+    height: 3px;
+    background-color: gray;
+    margin-left: 48%;
+    margin-right: 48%;
+    margin-top: 50px;
+}
+
+.phr {
+    text-align: center;
+    margin-top: 5px;
+}
