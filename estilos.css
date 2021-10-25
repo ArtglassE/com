@@ -10,41 +10,26 @@
 
 header {
     width: 100%;
-    box-shadow: 0 0 5px black;
+    text-align: center;
 }
 
-.navhead {
-    margin-left: 60px;
-    margin-right: 60px;
-}
-
-.lihead {
-    display: inline-block;
-    float: right;
-    padding-top: 27px;
-    padding-bottom: 15px;
-    margin-right: 20px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.lihead2 {
-    display: inline-block;
-    font-size: clamp(1em, 1em + 1vw, 3em);
-    padding-top: 17px;
-    padding-bottom: 15px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+.artglassicon {
+    width: 40%;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 /* CONFIGURAÇÃO FOOTER */
 
 footer {
     width: 100%;
-    text-align: center;
+    text-align: right;
     background-color: gray;
+}
+
+.navfoot {
+    margin-right: 40px;
+    margin-left: 40px;
 }
 
 .lifoot {
@@ -55,17 +40,27 @@ footer {
     padding-bottom: 10px;
 }
 
+.lifoot2 {
+    float: left;
+    display: inline-block;
+}
+
+.pfoot {
+    margin-top: 20px;
+    font-size: clamp(0.5em, 1em, 1.5em);
+}
+
 
 .instaicon {
-    width: 50px;
+    width: 32px;
 }
 
 .whatsicon {
-    width: 54px;
+    width: 34px;
 }
 
 .locateicon {
-    width: 41px;
+    width: 25px;
 }
 
 /* CONFIGURAÇÃO SECTION */
@@ -75,13 +70,8 @@ section {
 }
 
 .h1sec {
-    font-size: clamp(2em, 2em + 1vw, 5em);
+    font-size: clamp(1em, 1.5em + 1vw, 3em);
     margin-top: 50px;
-}
-.artglassicon {
-    width: 80%;
-    margin-top: 50px;
-    margin-bottom: 20px;
 }
 
 .psec {
@@ -90,7 +80,7 @@ section {
 }
 
 .psec2 {
-    margin-top: 20px;
+    margin-top: 35px;
     padding-top: 20px;
     padding-bottom: 15px;
     font-size: clamp(0.5em, 1em, 1.5em);
@@ -114,5 +104,5 @@ hr {
 .phr {
     text-align: center;
     margin-top: 5px;
-    font-size: clamp(1em, 1em, 1.5em);
+    font-size: clamp(0.5em, 1em, 1.5em);
 }
