@@ -14,7 +14,7 @@ header {
 }
 
 .artglassicon {
-    width: 40%;
+    width: 50%;
     margin-top: 50px;
     margin-bottom: 20px;
 }
@@ -54,7 +54,7 @@ footer {
 
 /* CONFIGURAÇÃO SECTION */
 
-section {
+.sechead {
     text-align: center;
 }
 
@@ -69,7 +69,7 @@ section {
 }
 
 .psec2 {
-    margin-top: 35px;
+    margin-top: 50px;
     padding-top: 20px;
     padding-bottom: 15px;
     font-size: clamp(0.5em, 1em, 1.5em);
@@ -87,11 +87,29 @@ hr {
     background-color: gray;
     margin-left: 48%;
     margin-right: 48%;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .phr {
     text-align: center;
     margin-top: 5px;
     font-size: clamp(0.5em, 1em, 1.5em);
+}
+
+/* CONFIGURAÇÃO GRADE */
+
+.img1 {
+    width: 20%;
+    border-radius: 500px;
+    padding: 10px;
+}
+
+.grade {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.pgrade {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
