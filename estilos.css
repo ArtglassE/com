@@ -40,17 +40,6 @@ footer {
     padding-bottom: 10px;
 }
 
-.lifoot2 {
-    float: left;
-    display: inline-block;
-}
-
-.pfoot {
-    margin-top: 20px;
-    font-size: clamp(1em, 1vw, 1em);
-}
-
-
 .instaicon {
     width: 32px;
 }
