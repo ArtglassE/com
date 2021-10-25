@@ -14,7 +14,7 @@ header {
 }
 
 .artglassicon {
-    width: 50%;
+    width: 80%;
     margin-top: 50px;
     margin-bottom: 20px;
 }
@@ -87,7 +87,7 @@ hr {
     background-color: gray;
     margin-left: 48%;
     margin-right: 48%;
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 .phr {
@@ -104,6 +104,24 @@ hr {
     padding: 10px;
 }
 
+@media screen and (max-width: 700px) {
+    .grade {
+      display: block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .img1 {
+      width: 50%;
+    }
+}
+
+@media screen and (mix-width: 800px) {
+    .imgp {
+        font-size: clamp(0.5em, 1em, 1.5em);
+    }
+}
+
 .grade {
     text-align: center;
     margin-top: 35px;
@@ -112,4 +130,5 @@ hr {
 .pgrade {
     margin-top: 50px;
     margin-bottom: 50px;
+    font-size: clamp(1em, 1em + 1vw, 1.5em);
 }
