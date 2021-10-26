@@ -68,32 +68,19 @@ footer {
     font-size: clamp(0.5em, 1em, 1.5em);
 }
 
-.psec2 {
-    margin-top: 50px;
-    padding-top: 20px;
-    padding-bottom: 15px;
-    font-size: clamp(0.5em, 1em, 1.5em);
-}
-
-.asec  {
-    background-color: gray;
-    padding: 15px;
-    border-radius: 3px;
-}
-
-hr {
-    display: center;
-    height: 3px;
-    background-color: gray;
-    margin-left: 48%;
-    margin-right: 48%;
-    margin-top: 90px;
-}
-
 .phr {
     text-align: center;
-    margin-top: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-size: clamp(0.5em, 1em, 1.5em);
+}
+
+.hra {
+    background-color: gray;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
 }
 
 /* CONFIGURAÇÃO GRADE */
