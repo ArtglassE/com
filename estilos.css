@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right,#1BA6A6, #05F2DB, #91D9D9);
+    background-image: linear-gradient(to top,#1BA6A6, #05F2DB, #91D9D9);
 }
 
 /* CONFIGURAÇÃO HEADER */
@@ -70,6 +70,7 @@ footer {
 .h1sec {
     font-size: clamp(1em, 1.5em + 1vw, 3em);
     margin-top: 50px;
+    color: #585859;
 }
 
 .psec {
@@ -90,13 +91,13 @@ footer {
 }
 
 .phr {
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 50px;
     font-size: clamp(0.5em, 1em, 1.5em);
 }
 
 .hra {
-    background-image: linear-gradient(to right,#1BA6A6, #05F2DB);
+    background-image: linear-gradient(to bottom,#05F2DB, #1BA6A6);
     text-decoration: none;
     border-radius: 5px;
     padding: 10px;
@@ -110,12 +111,14 @@ footer {
 
 .work {
     display: inline-block;
+    font-size: clamp(0.5em, 1em, 1.5em);
 }
 
 @media screen and (max-width: 700px) {
     .phone {
         position: relative;
         margin-top: 50px;
+        font-size: clamp(0.5em, 1em, 1.5em);
     }
 }
 
@@ -124,6 +127,7 @@ footer {
         float: right;
         position: relative;
         margin-right: 23%;
+        font-size: clamp(0.5em, 1em, 1.5em);
     }
 }
 
