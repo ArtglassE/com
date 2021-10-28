@@ -7,15 +7,21 @@
     text-align: center;
 }
 
-body {
-    background-image: linear-gradient(to top,#1BA6A6, #27F2F2, #27F2F2, #C8F1F2, white, white);
+@media screen and (min-width: 750px) {
+    body {
+        background-image: linear-gradient(to top,#1BA6A6, #27F2F2, #27F2F2, #C8F1F2, white, white, white);
+    }
 }
 
+@media screen and (max-width: 750px) {
+    body {
+        background-image: linear-gradient(to top,#1BA6A6, #27F2F2, #27F2F2, #C8F1F2, white, white);
+    }
+}
 /* CONFIGURAÇÃO HEADER */
 
 header {
     width: 100%;
-    background-color: white;
 }
 
 @media screen and (max-width: 700px) {
@@ -98,7 +104,7 @@ footer {
 }
 
 .hra {
-    background-image: linear-gradient(to bottom,#05F2DB, #1BA6A6);
+    background-image: linear-gradient(to top,#C8F1F2, white);
     text-decoration: none;
     border-radius: 5px;
     padding: 10px;
