@@ -68,7 +68,7 @@ Section Main
 */
 
 section.main{
-    background-image: url('img/hero-bg.webp');
+    background-image: url('https://artglasse.github.io/com/hero-bg.webp');
     padding:70px 0;
     background-position: center;
     background-size: cover;
