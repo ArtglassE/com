@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-image: linear-gradient(to top,#43E0DB, white)
+}
+
 .center{
     width: 100%;
     margin:0 auto;
@@ -77,7 +81,6 @@ Section Main
 
 section.main{
     padding:70px 0;
-    background-color:#00DBD4;
 }
 
 .main__cta{
@@ -117,10 +120,10 @@ section.main{
 
 .diferencial-single{
     border-radius:10px;
-    background-color:#43E0DB;
     width: 23%;
     margin: 0 1%;
     padding:50px 20px;
+    background-color: #43E0DB;
 }
 
 .diferencial-single i{
@@ -146,7 +149,6 @@ section.main{
 
 section.sobre{
     padding:80px 0;
-    background-color:#00DBD4;
 
 }
 
@@ -189,7 +191,6 @@ section.sobre{
 }
 
 section.conquistas{
-    background-color:#43E0DB;
     padding: 20px 0;
 }
 
@@ -250,7 +251,6 @@ section.conquistas{
 
 section.sobre-empreendedor{
     padding:40px 0;
-    background-color:#00DBD4;
 }
 .sobre-empreendedor-local{
     width:50%;
@@ -280,7 +280,6 @@ section.sobre-empreendedor{
 .telefones-contato {
     width: 100%;
     padding: 40px 0;
-    background-color:#00DBD4;
 }
 
 .telefones-contato h2 {
@@ -314,7 +313,6 @@ section.sobre-empreendedor{
 
 section.depoimentos{
     padding:40px 0;
-    background-color:#00DBD4;
 }
 
 section.depoimentos .depoimentos-chamada{
@@ -352,7 +350,6 @@ section.depoimentos .depoimentos-chamada{
 
 .carrousel-single-box{
     padding:20px;
-    background-color:#43E0DB;
     border-radius:10px;
 }
 
