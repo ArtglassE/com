@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://artglasse.github.io/com/style.css"/>
+    <link rel="shortcut icon" href="img\favorit-icon.webp">
     <title>ArtGLass Esquadrias</title>
 </head>
 <body>
@@ -15,24 +16,24 @@
                 <h2>ArtGlass Esquadrias</h2>
             </div><!--logo-->
             <div class="menu">
-                <a href="#">
+                <a class="nav-a" href="https://artglasse.github.io/com/">
                     Home
                 </a>
-                <a href="#">
+                <a class="nav-a" href="#sobre">
                    Sobre
                 </a>
-                <a href="#">
+                <a class="nav-a" href="#">
                     Contato
                 </a>
-                <a class="btn-menu" href="#">
+                <a class="btn-menu" href="">
                     Ligar Agora
                 </a>
             </div><!--menu-->
             <div class="menu-mobile">
                 <i class="fas fa-bars menu-mobile-icon"></i>
                 <div class="menu-items">
-                    <a href="">Home</a>
-                    <a href="">Sobre</a>
+                    <a href="https://artglasse.github.io/com/">Home</a>
+                    <a href="#sobre">Sobre</a>
                     <a href="">Contato</a>
                 </div>
             </div>
@@ -51,12 +52,12 @@
             <div class="diferenciais">
                 <div class="diferencial-single">
                     <i class="fas fa-list"></i>
-                    <h2>Porta de Alumínio</h2>
+                    <h2>Portas de Alumínio</h2>
                     <p>Aqui vai uma imagem de esquadria de alumínio</p>
                 </div><!--diferencial-single-->
                 <div class="diferencial-single">
                     <i class="fas fa-list"></i>
-                    <h2>Pele de Vidro</h2>
+                    <h2>Peles de Vidro</h2>
                     <p>Aqui vai uma imagem de pele de vidro</p>
                 </div><!--diferencial-single-->
                 <div class="diferencial-single">
@@ -75,7 +76,7 @@
     </section><!--main-->
 
 
-    <section class="sobre">
+    <section class="sobre" id="sobre">
         <div class="center">
             <div class="chamada-sobre">
                 <h2>Sobre a ArtGlass Esquadrias</h2>
@@ -116,7 +117,7 @@
 
     <section class="sobre-empreendedor">
         <div class="center">
-            <img class="sobre-empreendedor-img" src="https://artglasse.github.io/com/art-icon.webp" />
+            <iframe class="sobre-empreendedor-local" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.18192095578!2d-35.22555688569347!3d-5.829957659096209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b255652646a0ef%3A0x878d81fc961ca12d!2sR.%20An%C3%ADsio%20de%20Souza%2C%202616%20-%20Candel%C3%A1ria%2C%20Natal%20-%20RN%2C%2059064-364!5e0!3m2!1spt-BR!2sbr!4v1635864536669!5m2!1spt-BR!2sbr" loading="lazy"></iframe>
             <div class="sobre-empreendedor-content">
                 <h2>ArtGlass Vidros e Esquadrias</h2>
                 <p>Mais alguma coisa interessante sobre a ArtGlass</p>
@@ -142,7 +143,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="depoimentos">
         <div class="center">
@@ -177,28 +177,29 @@
                     <span>Algum outro cliente</span>
                 </div>
             </div>
-        
-        
-            </div>
+        </div>
     </section>
+
+    <section class="telefones-contato">
+        <h2>Telefones para Contato</h2>
+        <div class="numeros">
+            <div class="numerorg">
+                <h3 class="titulo-cargo">Telefone fixo</h3>
+                <p>(84) 3205-8038</p>
+            </div>
+            <div class="numerorg">
+                <h3 class="titulo-cargo">Comercial - Damarys</h3>
+                <p>(84) 99652-8092</p>
+            </div>
+            <div class="numerorg">
+                <h3 class="titulo-cargo">Coordenador de Produção - Douglas</h3>
+                <p>(84) 99912-4698</p>
+            </div>
+        </div><!--numeros-->
+    </section><!-- telefones-contato -->
+
     <script src="https://kit.fontawesome.com/16544f2866.js" crossorigin="anonymous"></script>
-    <script>
-
-        var el = document.querySelector('.menu-mobile-icon');
-
-        el.addEventListener('click',()=>{
-            //Queremos mostrar o menu.
-            var menuItems = document.querySelector('.menu-items');
-            if(menuItems.classList.contains('show')){
-                menuItems.classList.add('hide');
-                menuItems.classList.remove('show');
-            }else{
-                menuItems.classList.add('show');
-                menuItems.classList.remove('hide');
-            }
-        });
-
-    </script>
+    <script type="text/javascript" src="https://artglasse.github.io/com/app.js"></script>
 
 </body>
 </html>
