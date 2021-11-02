@@ -25,23 +25,34 @@ header{
 
 .logo{
     color: #16507b;
+    width: 20%;
 }
 
-.logo h2{
-    font-size: 22px;
+.logo-img {
+    max-width: 40%;
+    padding: 2% 0;
+    vertical-align: middle;
 }
 
 .menu{
-    width:75%;
+    width:80%;
     text-align: right;
 }
 
-.menu a{
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: .8em;
+}
+
+.menu .nav-a{
     color:#124265;
     font-size: 14px;
     text-decoration: none;
     margin-right: 20px;
-    /*transition:0.4s;*/
+    transition:0.4s;
 }
 
 .menu a:hover{
@@ -49,6 +60,9 @@ header{
 }
 
 .menu .btn-menu{
+    color:#124265;
+    font-size: 14px;
+    text-decoration: none;
     background-color: #007bff;
     display: inline-block;
     padding:8px 16px;
@@ -244,11 +258,14 @@ section.conquistas{
 section.sobre-empreendedor{
     padding:40px 0;
 }
-.sobre-empreendedor-img{
+.sobre-empreendedor-local{
     width:50%;
+    height: 500px;
 }
 
-.sobre-empreendedor-img img{max-width: 100%;}
+.sobre-empreendedor-local iframe {
+    max-width: 100%;
+}
 
 .sobre-empreendedor-content{
     width:50%;
@@ -266,6 +283,39 @@ section.sobre-empreendedor{
     margin-bottom: 14px;
 }
 
+.telefones-contato {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.telefones-contato h2 {
+    color: #124265;
+    margin: 20px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.telefones-contato h3 {
+    text-align: center;
+    color: #000000;
+}
+
+.numeros {
+    display: flex;
+    width: 100%;
+
+}
+
+.numerorg {
+    padding: 0 1%;
+    width: 100%;
+}
+
+.numeros p {
+    margin-bottom: 20px;
+    color: #444;
+    text-align: center;
+}
 
 section.depoimentos{
     padding:40px 0;
@@ -362,6 +412,20 @@ section.depoimentos .depoimentos-chamada{
     .conteudo-sobre p {
         width:100%;
         margin:20px 20px;}
+
+    .numeros {
+        display: block;
+        margin: 20px 15%;
+        
+    }
+
+    .numeros p {
+        text-align: left;
+    }
+
+    .numeros h3 {
+        text-align: left;
+    }
     
     .carrousel {
     				width: 100%;
@@ -384,6 +448,11 @@ section.depoimentos .depoimentos-chamada{
     
     .sobre-empreendedor img{
     				width: 100%;
+    }
+
+    .sobre-empreendedor-local {
+        width: 100%;
+        height: 300px;
     }
     
     .sobre-empreendedor-content {
