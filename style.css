@@ -5,17 +5,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background-color: #d5d5d5;
-}
-
 .center{
-    width: 100%;
+    max-width: 1100px;
     margin:0 auto;
     padding:0 2%;
     display: flex;
     flex-wrap: wrap;
 }
+
 
 .menu-mobile{
     display: none;
@@ -28,29 +25,29 @@ header{
 }
 
 .logo{
-    color: black;
-    width: 20%;
+    color: #16507b;
+}
+
+.logo h2{
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.logo-img {
+    width: 75%;
 }
 
 .menu{
-    width:80%;
+    width: 75%;
     text-align: right;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-:target {
-  scroll-margin-top: .8em;
-}
-
-.menu .nav-a{
-    color:black;
+.menu a{
+    color:#124265;
     font-size: 14px;
     text-decoration: none;
     margin-right: 20px;
-    transition:0.4s;
+    /*transition:0.4s;*/
 }
 
 .menu a:hover{
@@ -58,9 +55,6 @@ html {
 }
 
 .menu .btn-menu{
-    color:#124265;
-    font-size: 14px;
-    text-decoration: none;
     background-color: #007bff;
     display: inline-block;
     padding:8px 16px;
@@ -79,68 +73,87 @@ html {
 Section Main
 */
 
-.main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
+section.main{
+    background-image: url('https://artglasse.github.io/home/hero-bg.webp');
+    
+    padding:70px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
 }
 
 .main__cta{
     width:100%;
+    margin:60px 0;
     text-align: center;
-    margin-bottom: 10%;
 }
 
-.main__cta img{
-    width: 50%;
+.main__cta .btn-menu:hover {
+    background-color:#124265;
+    color:white;
+}
+
+.main__cta h2{
+    color:#16507b;
+    font-size: 40px;
 }
 
 .main__cta p{
-    color: #606060;
+    color:gray;
     font-size: 19px;
-    margin-top:10px 0;
+    margin:10px 0;
+}
+
+.main__cta button{
+    background-color: #007bff;
+    display: inline-block;
+    padding:8px 30px;
+    color:white;
+    border-radius:6px;
+    font-size: 16px;
+    border:0;
+    cursor: pointer;
 }
 
 .diferenciais{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
 } 
 
 .diferencial-single{
     border-radius:10px;
+    background-color:white;
     width: 23%;
-    margin: 0 1%;
+    margin-right: 2%;
     padding:50px 20px;
-    background-color: #cacaca;
+}
+
+.diferencial-single:hover {
+    transform:scale(1.1,1.1);
+    transition: .5s;
 }
 
 .diferencial-single i{
-    color:black;
-    font-size: 19px;
-    display: inline-block;
-    padding-right: 5px;
+    color:#124265;
+    font-size: 23px;
 }
 
 .diferencial-single h2{
-    display: inline-block;
-    color:black;
+    color:#124265;
     margin:10px 0;
     font-size: 17px;
 }
 
 .diferencial-single p{
+    color:gray;
     font-size: 14px;
-    line-height: 25px;
-    color: #606060;
+    line-height: 30px;
 }
 
-/* Sobre */
 
 section.sobre{
-    padding: 50px 0;
+    padding: 60px 0;
 }
 
 .chamada-sobre{
@@ -149,51 +162,49 @@ section.sobre{
 }
 
 .chamada-sobre h2{
-    color:black;
+    color:#124265;
+    text-transform: uppercase;
 }
 
 .chamada-sobre p{
     font-size: 14px;
-    color: #606060;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    color:gray;
+    margin:10px 0;
 }
 
 .conteudo-sobre{
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    flex-wrap: wrap;
 }
 
 .conteudo-sobre p{
-    padding: 0 15% 0 15%;
-    margin: 0 1%;
-    text-align: justify;
-    color: #606060;
+    width:48%;
+    margin-right: 2%;
+    color:#444444;
 }
 
 .conteudo-sobre span{
     display: inline-block;
-    width: 100%;
-    margin-top: 10px;
+    width:100%;
+    margin-top:10px;
 }
 .conteudo-sobre i{
     color: #007bff;
 }
 
 section.conquistas{
-    padding: 20px 0;
+    background-color:#f8fbfe;
+    padding:20px 0;
 }
 
 .conquista-single{
     width:22%;
     margin-right: 3%;
     text-align: center;
-    color:#606060;
+    color:#124265;
 }
 .conquista-single h2{
     font-size: 30px;
-    color: #606060;
 }
 
 .conquista-single img{
@@ -243,14 +254,12 @@ section.conquistas{
 section.sobre-empreendedor{
     padding:40px 0;
 }
-.sobre-empreendedor-local{
+.sobre-empreendedor-img{
     width:50%;
-    height: 500px;
+    height: 300px;
 }
 
-.sobre-empreendedor-local iframe {
-    max-width: 100%;
-}
+.sobre-empreendedor-img img{max-width: 100%;}
 
 .sobre-empreendedor-content{
     width:50%;
@@ -258,108 +267,66 @@ section.sobre-empreendedor{
 }
 
 .sobre-empreendedor-content h2{
-    color: black;
+    color: #124265;
     margin-bottom:20px;
 }
 
 .sobre-empreendedor-content p{
-    color: #606060;
-    font-size: 18px;
+    color:#444;
+    font-size: 14px;
     margin-bottom: 14px;
 }
 
-.telefones-contato {
-    width: 100%;
-    padding: 40px 0;
-}
-
-.telefones-contato h2 {
-    color: black;
-    margin: 20px 0;
-    text-align: center;
-}
-
-.telefones-contato h3 {
-    text-align: center;
-    color: #606060;
-}
-
-.numeros {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.numerorg {
-    padding: 0 1%;
-    width: 100%;
-}
-
-.numeros p {
-    margin-bottom: 20px;
-    color: #606060;
-    text-align: center;
-}
-
-.center-1 {
-   height: 80vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-}
 
 section.depoimentos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    padding:10% 0;
 }
 
 section.depoimentos .depoimentos-chamada{
     text-align: center;
-    width: 100%;
-    margin: 20px 0; 
+}
 
+.depoimentos-chamada {
+    display: inline-flex;
+    flex-direction: column;
+    width: 1200px;
 }
 
 .depoimentos-chamada h2{
-    color: black;
+    color: #124265;
+    text-transform: uppercase;
 }
 
 .depoimentos-chamada p{
-    color: #606060;
+    color:black;
     margin:10px 0;
     font-size: 14px;
 }
 
 .carrousel{
     display: flex;
-    width: 100%;
 }
 
 .carrousel-single{
-    width:32%;
-    margin:0 1%;
+    width:31%;
+    margin-right: 2%;
     text-align: center;
-}
-
-.carrousel-single p {
-    color: #606060;
 }
 
 .carrousel-single-box{
     padding:20px;
+    background-color:#f3f9fd;
     border-radius:10px;
-    background-color: #cacaca;
 }
 
 .carrousel-single-box p{
     font-style: italic;
-    color: #606060;
+    color:#4b4b4b;
     font-size: 14px;
 }
 
 .carrousel-single-box i{
-    color: #575757;
+    color: #c9e3f5;
     font-size: 19px;
     padding:0 8px;
 }
@@ -373,8 +340,35 @@ section.depoimentos .depoimentos-chamada{
 }
 
 .carrousel-single span{
-    color: #606060;
+    color:#ccc;
 }
+
+.telefones-contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:#f8fbfe;
+    padding:20px 0;
+}
+
+.contato-single {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+
+.contato-single h2 {
+    color:#124265;
+    text-transform: uppercase;
+}
+
+.contato-single p {
+    color:#444;
+    font-size: 14px;
+    margin: 0 0 14px 0;
+}
+
+
 
 @media screen and (max-width: 768px){
     .diferencial-single{
@@ -385,88 +379,61 @@ section.depoimentos .depoimentos-chamada{
     .menu{
         display: none;
     }
-
     .logo{
-        width:70%;
-    }
-
-    .main__cta img {
-        width: 100%;
-        padding: 0 30px;
+        width:20%;
     }
 
     .menu-mobile{
-        width:30%;
+        width:80%;
         text-align: right;
         display: block;
     }
+
     .menu-mobile i{
         cursor: pointer;
         font-size: 23px;
         margin-top:8px;
     }
 
+    .center1 {
+        flex-direction: column;
+    }
+
     .conquista-single {
-        width:100%;
-        margin:20px 20px;
-    }
-
-    .conteudo-sobre p {
-        width:100%;
-        margin:20px 20px;
-    }
-
-    .numeros {
-        display: block;
-        padding: 0 70px;
-    }
-
-    .numerorg p {
-        text-align: left;
-    }
-
-    .numerorg h3 {
-        text-align: left;
-    }
-    
-    .carrousel {
-    	width: 100%;
-    	display: block;
-    }
-    
-    .carrousel-single{
-    	width: 100%;
-    	padding: 20px 2%;
-    }
-    
-    .carrousel-single .text-single{
-    	text-align: justify; 
-    }
-    
-    .depoimentos-chamada p{
-    	padding: 20px 2%;
-    	text-align: justify;
-    }
-    
-    .sobre-empreendedor img{
-    	width: 100%;
-    }
-
-    .sobre-empreendedor-local {
         width: 100%;
-        height: 300px;
     }
-    
+
+    .conquista-single img{
+        width: 50%;
+    }
+
+    .sobre-empreendedor-img {
+        width: 100%;
+    }
+
     .sobre-empreendedor-content {
-    	width:100%;
-    	padding: 0 2%;
+        margin-top: 50px;
+        width: 100%;
     }
-    .sobre-empreendedor-content p{
-    	text-align: justify;
+
+    .conteudo-sobre p{
+        width:100%;
+        margin:20px 20px;
     }
-    
-    .sobre-empreendedor-content h2{
-    	text-align: center;
-    	padding: 10px 0px;
+
+    .depoimentos-chamada {
+        flex-direction: column;
+    }
+
+    .carrousel {
+        flex-direction: column;
+    }
+
+    .carrousel-single {
+        width: 100%;
+    }
+
+    .telefones-contato {
+        flex-direction: column;
     }
 }
