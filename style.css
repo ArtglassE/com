@@ -74,7 +74,7 @@ Section Main
 */
 
 section.main{
-    background-image: url('https://artglasse.github.io/home/hero-bg.webp');
+    background-color: white;
     
     padding-bottom: 5%;
     background-position: center;
@@ -119,11 +119,17 @@ section.main{
 .diferenciais{
     display: flex;
     flex-wrap: wrap;
-} 
+}
+
+.diferencial-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
 .diferencial-single{
     border-radius:10px;
-    background-color:white;
+    background-color: rgb(245, 245, 245);
     width: 23%;
     margin-right: 2%;
     padding:50px 20px;
@@ -143,6 +149,7 @@ section.main{
     color:#124265;
     margin:10px 0;
     font-size: 17px;
+    margin-left: 7px;
 }
 
 .diferencial-single p{
@@ -153,7 +160,8 @@ section.main{
 
 
 section.sobre{
-    padding: 60px 0;
+    padding-bottom: 70px;
+    background-color: #e4e4e4;
 }
 
 .chamada-sobre{
@@ -162,9 +170,9 @@ section.sobre{
 }
 
 .chamada-sobre h2{
-    color:#124265;
+    color:#535b61;
     text-transform: uppercase;
-    padding-top: 10%;
+    padding-top: 8%;
 }
 
 .chamada-sobre p{
@@ -194,7 +202,7 @@ section.sobre{
 }
 
 section.conquistas{
-    background-color:#f8fbfe;
+    background-color:#e2f0ff;
     padding:20px 0;
 }
 
@@ -254,13 +262,16 @@ section.conquistas{
 
 section.sobre-empreendedor{
     padding:40px 0;
+    background-color: #e4e4e4;
 }
 .sobre-empreendedor-img{
     width:50%;
     height: 300px;
 }
 
-.sobre-empreendedor-img img{max-width: 100%;}
+.sobre-empreendedor-img img {
+    max-width: 100%;
+}
 
 .sobre-empreendedor-content{
     width:50%;
@@ -281,6 +292,7 @@ section.sobre-empreendedor{
 
 section.depoimentos{
     padding:10% 0;
+    background-color: #e4e4e4;
 }
 
 section.depoimentos .depoimentos-chamada{
@@ -316,7 +328,7 @@ section.depoimentos .depoimentos-chamada{
 
 .carrousel-single-box{
     padding:20px;
-    background-color:#f3f9fd;
+    background-color:#e2f0ff;
     border-radius:10px;
 }
 
@@ -348,7 +360,7 @@ section.depoimentos .depoimentos-chamada{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color:#f8fbfe;
+    background-color:#e2f0ff;
     padding:20px 0;
 }
 
