@@ -370,7 +370,7 @@ section.depoimentos .depoimentos-chamada{
 
 
 
-@media screen and (max-width: 500px){
+@media only screen and (max-width: 500px){
     .diferencial-single{
         width:100%;
         margin-bottom: 20px;
