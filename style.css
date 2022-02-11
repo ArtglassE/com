@@ -7,8 +7,8 @@
 
 .center{
     max-width: 1100px;
-    margin:0 auto;
-    padding:0 2%;
+    margin: 0 auto;
+    padding: 0 2%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -34,7 +34,7 @@ header{
 }
 
 .logo-img {
-    width: 75%;
+    width: 40%;
 }
 
 .menu{
@@ -76,7 +76,7 @@ Section Main
 section.main{
     background-image: url('https://artglasse.github.io/home/hero-bg.webp');
     
-    padding:70px 0;
+    padding-bottom: 5%;
     background-position: center;
     background-size: cover;
     background-repeat:no-repeat;
@@ -164,6 +164,7 @@ section.sobre{
 .chamada-sobre h2{
     color:#124265;
     text-transform: uppercase;
+    padding-top: 10%;
 }
 
 .chamada-sobre p{
@@ -368,9 +369,7 @@ section.depoimentos .depoimentos-chamada{
     margin: 0 0 14px 0;
 }
 
-
-
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 700px){
     .diferencial-single{
         width:100%;
         margin-bottom: 20px;
