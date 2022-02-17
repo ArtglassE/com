@@ -7,8 +7,8 @@
 
 .center{
     max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2%;
+    margin:0 auto;
+    padding:0 2%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -34,7 +34,7 @@ header{
 }
 
 .logo-img {
-    width: 40%;
+    width: 75%;
 }
 
 .menu{
@@ -68,15 +68,27 @@ header{
     color:white;
 }
 
+.info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info--art {
+    width: 90%;
+    height: 100vh;
+}
+
 
 /*
 Section Main
 */
 
 section.main{
-    background-color: white;
+    background-image: url('https://artglasse.github.io/home/hero-bg.webp');
     
-    padding-bottom: 5%;
+    padding:70px 0;
     background-position: center;
     background-size: cover;
     background-repeat:no-repeat;
@@ -119,17 +131,11 @@ section.main{
 .diferenciais{
     display: flex;
     flex-wrap: wrap;
-}
-
-.diferencial-title {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
+} 
 
 .diferencial-single{
     border-radius:10px;
-    background-color: rgb(245, 245, 245);
+    background-color:white;
     width: 23%;
     margin-right: 2%;
     padding:50px 20px;
@@ -149,7 +155,6 @@ section.main{
     color:#124265;
     margin:10px 0;
     font-size: 17px;
-    margin-left: 7px;
 }
 
 .diferencial-single p{
@@ -160,8 +165,7 @@ section.main{
 
 
 section.sobre{
-    padding-bottom: 70px;
-    background-color: #e4e4e4;
+    padding: 60px 0;
 }
 
 .chamada-sobre{
@@ -170,9 +174,8 @@ section.sobre{
 }
 
 .chamada-sobre h2{
-    color:#535b61;
+    color:#124265;
     text-transform: uppercase;
-    padding-top: 8%;
 }
 
 .chamada-sobre p{
@@ -202,7 +205,7 @@ section.sobre{
 }
 
 section.conquistas{
-    background-color:#e2f0ff;
+    background-color:#f8fbfe;
     padding:20px 0;
 }
 
@@ -262,16 +265,13 @@ section.conquistas{
 
 section.sobre-empreendedor{
     padding:40px 0;
-    background-color: #e4e4e4;
 }
 .sobre-empreendedor-img{
     width:50%;
     height: 300px;
 }
 
-.sobre-empreendedor-img img {
-    max-width: 100%;
-}
+.sobre-empreendedor-img img{max-width: 100%;}
 
 .sobre-empreendedor-content{
     width:50%;
@@ -292,7 +292,6 @@ section.sobre-empreendedor{
 
 section.depoimentos{
     padding:10% 0;
-    background-color: #e4e4e4;
 }
 
 section.depoimentos .depoimentos-chamada{
@@ -328,7 +327,7 @@ section.depoimentos .depoimentos-chamada{
 
 .carrousel-single-box{
     padding:20px;
-    background-color:#e2f0ff;
+    background-color:#f3f9fd;
     border-radius:10px;
 }
 
@@ -360,7 +359,7 @@ section.depoimentos .depoimentos-chamada{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color:#e2f0ff;
+    background-color:#f8fbfe;
     padding:20px 0;
 }
 
@@ -381,7 +380,50 @@ section.depoimentos .depoimentos-chamada{
     margin: 0 0 14px 0;
 }
 
-@media only screen and (max-width: 700px){
+html, body {
+    overflow: hidden;
+}
+
+.pop-up {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #4444447a;
+}
+
+.content-pop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 50%;
+    height: 80vh;
+}
+
+.pop-up img {
+    position: relative;
+    width: 40%;
+    background-color: transparent;
+}
+
+.pop-up button {
+    position: relative;
+    top: -10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 100%;
+    border: none;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
     .diferencial-single{
         width:100%;
         margin-bottom: 20px;
