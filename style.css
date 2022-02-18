@@ -93,6 +93,7 @@ section.main{
     background-size: cover;
     background-repeat:no-repeat;
     background-attachment: fixed;
+    height: 100vh;
 }
 
 .main__cta{
@@ -400,13 +401,13 @@ html, body {
     flex-direction: row-reverse;
     justify-content: center;
     width: 50%;
-    height: 80vh;
+    height: 80%;
 }
 
 .pop-up img {
     position: relative;
-    width: 40%;
     background-color: transparent;
+    border-top-right-radius: 20px;
 }
 
 .pop-up button {
