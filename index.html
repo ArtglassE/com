@@ -2,19 +2,23 @@
 <html lang="pt-BR" id="html">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://artglasse.github.io/home/style.css" rel="stylesheet" />
     <link rel="shortcut icon" href="https://artglasse.github.io/home/favorit-icon.webp" />
+    <link type="text/css" href="https://artglasse.github.io/home/style.css" rel="stylesheet" />
     <title>ArtGlass Esquadrias</title>
 </head>
 
-<body id="body" >
+<body>
 
-    <div class="pop-up" id="pop">
+    <div class="pop-up" id="pop" onclick="hidde()">
         <div class="content-pop">
-            <button onclick="hidde()" ></button>
-            <img src="https://artglasse.github.io/home/ArtGlass-prop.jpg" />
+            <button onclick="hidde()"></button>
+            <img src="https://artglasse.github.io/home/ArtGlass-prop.jpg"/>
         </div>
     </div>
     <!--pop-up-->
@@ -26,7 +30,7 @@
             </div>
             <!--logo-->
             <div class="menu">
-                <a href="https://artglasse.github.io/home/index.html">
+                <a href="index.html">
                     Home
                 </a>
                 <a href="#sobre">
@@ -55,38 +59,48 @@
         <!--center-->
     </header>
 
-
     <section class="main">
         <div class="center">
             <div class="main__cta">
                 <img class="logo-img" src="https://artglasse.github.io/home/art-icon.webp" />
                 <p>Empresa especializada em esquadrias de alumínio!</p>
-                <button class="btn-menu">Contatos</button>
             </div>
             <!--main-cta-->
 
             <div class="diferenciais">
                 <div class="diferencial-single">
-                    <i class="fas fa-bars"></i>
-                    <h2>Esquadrias</h2>
+                    <div class="diferencial-title">
+                        <i class="fas fa-bars"></i>
+                        <h2> Esquadrias</h2>
+                    </div>
+
                     <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
                 </div>
                 <!--diferencial-single-->
                 <div class="diferencial-single">
-                    <i class="fas fa-bars"></i>
-                    <h2>Guarda-corpo</h2>
+                    <div class="diferencial-title">
+                        <i class="fas fa-bars"></i>
+                        <h2> Guarda-corpo</h2>
+                    </div>
+
                     <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
                 </div>
                 <!--diferencial-single-->
                 <div class="diferencial-single">
-                    <i class="fas fa-bars"></i>
-                    <h2>Box's</h2>
+                    <div class="diferencial-title">
+                        <i class="fas fa-bars"></i>
+                        <h2> Box's</h2>
+                    </div>
+
                     <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
                 </div>
                 <!--diferencial-single-->
                 <div class="diferencial-single">
-                    <i class="fas fa-bars"></i>
-                    <h2>Portas de ACM</h2>
+                    <div class="diferencial-title">
+                        <i class="fas fa-bars"></i>
+                        <h2> Portas de ACM</h2>
+                    </div>
+
                     <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
                 </div>
                 <!--diferencial-single-->
@@ -98,9 +112,8 @@
     </section>
     <!--main-->
 
-
     <section class="sobre" id="sobre">
-        <div class="center">
+        <div class="center center1">
             <div class="chamada-sobre">
                 <h2>Sobre a ArtGlass</h2>
                 <p>Conheça um pouco sobre as nossas esquadrias de alumínio!</p>
@@ -124,7 +137,6 @@
         <!--center-->
     </section>
     <!--sobre-->
-
 
     <section class="conquistas">
         <div class="center">
@@ -162,7 +174,6 @@
     </section>
     <!--sobre-empreendedor-->
 
-
     <section class="conquistas">
         <div class="center center1">
             <div class="conquista-single">
@@ -179,7 +190,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="depoimentos">
         <div class="center">
@@ -198,9 +208,10 @@
                             quas.</p>
                     </div>
                     <img src="https://artglasse.github.io/home/hero-bg.webp" />
-                    <p>Anônimo</p>
+                    <p class="p2">Anônimo</p>
                     <span>---</span>
                 </div>
+
                 <div class="carrousel-single">
                     <div class="carrousel-single-box">
                         <p><i class="fas fa-quote-right"></i> ecessitatibus eius consequatur ex aliquid fuga eum quidem.
@@ -209,9 +220,10 @@
                             quas.</p>
                     </div>
                     <img src="https://artglasse.github.io/home/hero-bg.webp" />
-                    <p>Anônimo</p>
+                    <p class="p2">Anônimo</p>
                     <span>---</span>
                 </div>
+
                 <div class="carrousel-single">
                     <div class="carrousel-single-box">
                         <p><i class="fas fa-quote-right"></i> ecessitatibus eius consequatur ex aliquid fuga eum quidem.
@@ -220,9 +232,10 @@
                             quas.</p>
                     </div>
                     <img src="https://artglasse.github.io/home/hero-bg.webp" />
-                    <p>Anônimo</p>
+                    <p class="p2">Anônimo</p>
                     <span>---</span>
                 </div>
+
             </div>
 
         </div>
@@ -267,10 +280,8 @@
         });
 
         function hidde() {
-            
             document.getElementById('pop').style.display="none"
-            document.getElementById('html').style.overflow="scroll"
-            document.getElementById('body').style.overflow="scroll"
+            document.getElementById('html').style.overflowY="scroll"
         }
 
     </script>
