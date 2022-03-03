@@ -114,7 +114,7 @@ Section Main
 */
 
 section.main{
-    background-image: url('https://artglasse.github.io/home/hero-bg.webp');
+    background-image: url('img/hero-bg.webp');
     
     height: 90vh;
     display: flex;
