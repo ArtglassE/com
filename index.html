@@ -1,277 +1,478 @@
-<!DOCTYPE html>
-<html lang="pt-BR" id="html">
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="ArtGlass Esquadrias, empresa especializada em vidros e esquadrias de alumínio. " />
+.center{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://artglasse.github.io/home/favorit-icon.webp" />
-    <link type="text/css" href="./style.css" rel="stylesheet" />
-    <title>ArtGlass Esquadrias</title>
-</head>
+/* .pop-up {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #4444447a;
+}
 
-<body>
+.content-pop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 50%;
+    height: 80%;
+}
 
-    <!-- <div class="pop-up" id="pop" onclick="hidde()">
-        <div class="content-pop">
-            <button onclick="hidde()"></button>
-            <img src="img/ArtGlass-prop.jpg" />
-        </div>
-    </div>
-    pop-up -->
+.pop-up img {
+    position: relative;
+    background-color: transparent;
+    border-top-right-radius: 20px;
+}
 
-    <header>
-        <div class="center">
-            <div class="logo">
-                <h2>ArtGlass Esquadrias</h2>
-            </div>
-            <!--logo-->
-            <div class="menu">
-                <a href="index.html">
-                    Home
-                </a>
-                <a href="#sobre">
-                    Sobre
-                </a>
-                <a href="#contatos">
-                    Contato
-                </a>
-                <a class="btn-menu" href="#">
-                    Ligar Agora
-                </a>
-            </div>
-            <!--menu-->
-        </div>
-        <!--center-->
-    </header>
+.pop-up button {
+    position: relative;
+    top: -10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 100%;
+    border: none;
+} */
 
-    <section class="main">
-        <div class="center">
-            <div class="main__cta">
-                <img class="logo-img" src="img/art-icon.webp" />
-                <p>Empresa especializada em esquadrias de alumínio!</p>
-            </div>
-            <!--main-cta-->
 
-            <div class="diferenciais">
-                <div class="diferencial-single">
-                    <div class="diferencial-title">
-                        <i class="fas fa-bars"></i>
-                        <h2> Esquadrias</h2>
-                    </div>
+.menu-mobile{
+    display: none;
+}
 
-                    <p>Conheça as Esquadrias da ArtGlass</p>
-                </div>
-                <!--diferencial-single-->
-                <div class="diferencial-single">
-                    <div class="diferencial-title">
-                        <i class="fas fa-bars"></i>
-                        <h2> Guarda-corpo</h2>
-                    </div>
+header{
+    background-color: white;
+    padding:20px 0;
+    border-bottom:1px solid rgb(200,200,200);
+}
 
-                    <p>Conheça os guarda corpo da ArtGlass</p>
-                </div>
-                <!--diferencial-single-->
-                <div class="diferencial-single">
-                    <div class="diferencial-title">
-                        <i class="fas fa-bars"></i>
-                        <h2> Box's</h2>
-                    </div>
+.logo{
+    color: #16507b;
+}
 
-                    <p>Conheça os Box's da ArtGlass</p>
-                </div>
-                <!--diferencial-single-->
-                <div class="diferencial-single">
-                    <div class="diferencial-title">
-                        <i class="fas fa-bars"></i>
-                        <h2> Portas de ACM</h2>
-                    </div>
+.logo h2{
+    font-weight: normal;
+    font-size: 22px;
+}
 
-                    <p>Conheça as nossas portas de ACM</p>
-                </div>
-                <!--diferencial-single-->
-            </div>
-            <!--diferenciais-->
+.logo-img {
+    width: 40%;
+}
 
-        </div>
-        <!--center-->
-    </section>
-    <!--main-->
+.menu{
+    width: 75%;
+    text-align: right;
+}
 
-    <section class="sobre" id="sobre">
-        <div class="center center1">
-            <div class="chamada-sobre">
-                <h2>Sobre a ArtGlass</h2>
-                <p>Conheça um pouco sobre as nossas esquadrias de alumínio!</p>
-            </div>
-            <!--chamada-sobre-->
-            <div class="conteudo-sobre">
-                <p> A ArtGlass, produz e instala esquadrias de alumínio que atendam ao projeto do cliente, seja ele
-                    comercial, industrial ou residencial com grandes volumes ou ainda obras especiais. Especializada em
-                    fachadas de vidro, ACM e esquadrias em geral, com vasta experiência em guarda-corpo, box e vidros
-                    temperados.
+.menu a{
+    color:#124265;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 20px;
+    /*transition:0.4s;*/
+}
 
-                    <br />
-                    <!-- <span><i class="fas fa-check-double"></i> Item 1<br /></span>
-                    <span> <i class="fas fa-check-double"></i> Item 2<br /></span> -->
-                </p>
-                <p>Com um grande número de obras realizadas, a ArtGlass é referência em projetos importantes que
-                    demandam conhecimento técnico e o compromisso junto a seus clientes.</p>
-            </div>
-            <!--conteudo-sobre-->
-        </div>
-        <!--center-->
-    </section>
-    <!--sobre-->
+.menu a:hover{
+    color:#007bff;
+}
 
-    <!-- <section class="conquistas">
-        <div class="center">
-            <div class="conquista-single">
-                <h2>+10 mil</h2>
-                <p>Obras</p>
-            </div>
-            <div class="conquista-single">
-                <h2>+10 mil</h2>
-                <p>Clientes</p>
-            </div>
-            <div class="conquista-single">
-                <h2>+10 mil</h2>
-                <p>...</p>
-            </div>
-            <div class="conquista-single">
-                <h2>+10 mil</h2>
-                <p>...</p>
-            </div>
-        </div>
-    </section> -->
+.menu .btn-menu{
+    background-color: #007bff;
+    display: inline-block;
+    padding:8px 16px;
+    color:white;
+    border-radius:6px;
+}
 
-    <section class="sobre-empreendedor">
-        <div class="center center1">
-            <iframe class="sobre-empreendedor-img"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.1820617146827!2d-35.22539708463312!3d-5.829937759098608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b255c2928d95ff%3A0x1a72fdc25bb14131!2sArtglass%20vidros%20e%20Esquadrias!5e0!3m2!1spt-BR!2sbr!4v1644577690726!5m2!1spt-BR!2sbr"
-                style="border:5px;" allowfullscreen="" loading="lazy"></iframe>
-            <div class="sobre-empreendedor-content">
-                <h2>Localização</h2>
-                <p>Estamos localizados na Rua Anízio de Souza - 2620, Candelária - Natal</p>
-                <p>Ligue e marque uma visita para conhecer nossas esquadrias e tirar suas dúvidas.</p>
-            </div>
-        </div>
-        <!--center-->
-    </section>
-    <!--sobre-empreendedor-->
 
-    <!-- <section class="conquistas">
-        <div class="center center1">
-            <div class="conquista-single">
-                <img src="img/art-icon.webp" />
-            </div>
-            <div class="conquista-single">
-                <img src="img/art-icon.webp" />
-            </div>
-            <div class="conquista-single">
-                <img src="img/art-icon.webp" />
-            </div>
-            <div class="conquista-single">
-                <img src="img/art-icon.webp" />
-            </div>
-        </div>
-    </section> -->
+.menu .btn-menu:hover{
+    background-color:#124265;
+    color:white;
+}
 
-    <section class="depoimentos">
-        <div class="center">
-            <div class="depoimentos-chamada">
-                <h2>Depoimentos</h2>
-                <p>Conheça a opinião de alguns clientes que adquiriram as esquadrias da ArtGlass.</p>
-            </div>
 
-            <div class="carrousel">
+/*
+Section Main
+*/
 
-                <div class="carrousel-single">
-                    <div class="carrousel-single-box">
-                        <p><i class="fas fa-quote-left"></i> Só tenho a agradecer pela atenção que me deram desde o
-                            primeiro atendimento. Os profissionais da ArtGlass são especiais. Equipe muito educada,
-                            solícita e perfeccionista, desde o atendente, gerente, técnicos e instaladores. O que me
-                            rendeu uma experiência melhor do que aquela que eu esperava. Entregaram o produto antes do
-                            prazo combinado. Foram a minha casa diversas vezes para fazer medições e auxiliar o mestre
-                            de obras. Minha cortina de vidro ficou perfeita! Procurei um defeito e não encontrei! Somos
-                            acostumados a reclamar, mas temos que exaltar quando somos surpreendidos com um serviço de
-                            primeira qualidade. Portanto, parabéns à ArtGlass!<i class="fas fa-quote-right"></i></p>
-                    </div>
-                    <img src="img/hero-bg.webp" />
-                    <p class="p2">- ITP M</p>
-                    <span>---</span>
-                </div>
+section.main{
+    background-color: white;
+    padding-bottom: 5%;
+}
 
-                <div class="carrousel-single">
-                    <div class="carrousel-single-box">
-                        <p><i class="fas fa-quote-left"></i> Só tenho a agradecer pela atenção que me deram desde o
-                            primeiro atendimento. Os profissionais da ArtGlass são especiais. Equipe muito educada,
-                            solicita e perfeccionista, desde o atendente, gerente, técnicos e instaladores. O que me
-                            rendeu uma experiência melhor do que aquela que eu esperava. Entregaram o produto antes do
-                            prazo combinado. Foram a minha casa diversas vezes para fazer medições e auxiliar o mestre
-                            de obras. Minha cortina de vidro ficou perfeita! Procurei um defeito e não encontrei!<i
-                                class="fas fa-quote-right"></i></p>
-                    </div>
-                    <img src="img/hero-bg.webp" />
-                    <p class="p2">     </p>
-                    <span>---</span>
-                </div>
+.main__cta{
+    width:100%;
+    margin:60px 0;
+    text-align: center;
+}
 
-                <div class="carrousel-single">
-                    <div class="carrousel-single-box">
-                        <p><i class="fas fa-quote-left"></i> Mestre, só tenho a lhe agradecer pela atenção que vc me deu
-                            desde o início. Ficou tudo melhor do que eu imaginava, perfeito! Os profissionais da sua
-                            empresa são especiais. Faça um esforço pra manter essa equipe, pq são todos muito educados,
-                            solícitos e perfeccionistas. Nós somos acostumados a reclamar, mas temos que exaltar quando
-                            somos supreendido com um serviço de primeiro mundo. Parabéns a ArtGlass!<i
-                                class="fas fa-quote-right"></i></p>
-                    </div>
-                    <img src="img/hero-bg.webp" />
-                    <p class="p2">     </p>
-                    <span>---</span>
-                </div>
+.main__cta .btn-menu:hover {
+    background-color:#124265;
+    color:white;
+}
 
-            </div>
+.main__cta h2{
+    color:#16507b;
+    font-size: 40px;
+}
 
-        </div>
-    </section>
+.main__cta p{
+    color:gray;
+    font-size: 19px;
+    margin:10px 0;
+}
 
-    <div class="telefones-contato" id="contatos">
-        <div class="contato-single">
-            <h2>Telefone Comercial</h2>
-            <p>(84)9 9652-8092</p>
-        </div>
-        <!--contato-single-->
+.main__cta button{
+    background-color: #007bff;
+    display: inline-block;
+    padding:8px 30px;
+    color:white;
+    border-radius:6px;
+    font-size: 16px;
+    border:0;
+    cursor: pointer;
+}
 
-        <div class="contato-single">
-            <h2>Telefone Coordenação</h2>
-            <p>(84)9 9912-4698</p>
-        </div>
-        <!--contato-single-->
+.diferenciais{
+    display: flex;
+    flex-wrap: wrap;
+}
 
-        <div class="contato-single">
-            <h2>Telefone Fixo</h2>
-            <p>3205-8038</p>
-        </div>
-        <!--contato-single-->
-    </div>
-    <!--telefones-contato-->
+.diferencial-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
-    <script src="https://kit.fontawesome.com/16544f2866.js" crossorigin="anonymous"></script>
-    <script>
+.diferencial-single{
+    border-radius:10px;
+    background-color: rgb(240, 240, 240);
+    width: 23%;
+    margin-right: 2%;
+    padding:50px 20px;
+}
 
-        // function hidde() {
-        //     document.getElementById('pop').style.display = "none"
-        //     document.getElementById('html').style.overflowY = "scroll"
-        // }
+.diferencial-single:hover {
+    transform:scale(1.1,1.1);
+    transition: .5s;
+}
 
-    </script>
+.diferencial-single i{
+    color:#124265;
+    font-size: 23px;
+}
 
-</body>
+.diferencial-single h2{
+    color:#124265;
+    margin:10px 0;
+    font-size: 17px;
+    margin-left: 7px;
+}
 
-</html>
+.diferencial-single p{
+    color:gray;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+
+section.sobre{
+    padding-bottom: 70px;
+    background-color: #e4e4e4;
+}
+
+.chamada-sobre{
+    width:100%;
+    text-align: center;
+}
+
+.chamada-sobre h2{
+    color:#535b61;
+    text-transform: uppercase;
+    padding-top: 8%;
+}
+
+.chamada-sobre p{
+    font-size: 14px;
+    color:gray;
+    margin:10px 0;
+}
+
+.conteudo-sobre{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudo-sobre p{
+    width:48%;
+    margin-right: 2%;
+    color:#444444;
+}
+
+.conteudo-sobre span{
+    display: inline-block;
+    width:100%;
+    margin-top:10px;
+}
+.conteudo-sobre i{
+    color: #007bff;
+}
+
+section.conquistas{
+    background-color:#e2f0ff;
+    padding:20px 0;
+}
+
+.conquista-single{
+    width:22%;
+    margin-right: 3%;
+    text-align: center;
+    color:#124265;
+}
+.conquista-single h2{
+    font-size: 30px;
+}
+
+.conquista-single img{
+    max-width: 100%;
+}
+
+.conquista-single img{
+    filter: grayscale(100%);
+    transform:scale(1,1);
+    transition: 1s;
+}
+
+
+.conquista-single img:hover{
+    transform:scale(1.1,1.1);
+    filter:grayscale(0);
+}
+
+.menu-items{
+    position: absolute;
+    left:0;
+    top:60px;
+    width:100%;
+    text-align: center;
+    background-color:white;
+    border-bottom:2px solid blue;
+    display: block;
+    opacity: 0;
+    transition: 1s;
+}
+
+.menu-items.show{
+    opacity: 1;
+   
+}
+
+.menu-items.hidde{
+    opacity: 0;
+}
+
+.menu-items a{
+    display: block;
+    text-decoration: none;
+    color:blue;
+}
+
+section.sobre-empreendedor{
+    padding:40px 0;
+    background-color: #ffffff;
+}
+.sobre-empreendedor-img{
+    width:50%;
+    height: 300px;
+}
+
+.sobre-empreendedor-img img {
+    max-width: 100%;
+}
+
+.sobre-empreendedor-content{
+    width:50%;
+    padding:0 50px;
+}
+
+.sobre-empreendedor-content h2{
+    color: #124265;
+    margin-bottom:20px;
+}
+
+.sobre-empreendedor-content p{
+    color:#444;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+
+section.depoimentos{
+    padding:10% 0;
+    background-color: #e4e4e4;
+}
+
+section.depoimentos .depoimentos-chamada{
+    text-align: center;
+}
+
+.depoimentos-chamada {
+    display: inline-flex;
+    flex-direction: column;
+    width: 1200px;
+}
+
+.depoimentos-chamada h2{
+    color: #124265;
+    text-transform: uppercase;
+}
+
+.depoimentos-chamada p{
+    color:black;
+    margin:10px 0;
+    font-size: 14px;
+}
+
+.carrousel{
+    display: flex;
+}
+
+.carrousel-single{
+    width:31%;
+    margin-right: 2%;
+    text-align: center;
+}
+
+.carrousel-single-box{
+    padding:20px;
+    background-color:#dbdbdb;
+    border-radius:10px;
+}
+
+.carrousel-single-box p{
+    font-style: italic;
+    color:#4b4b4b;
+    font-size: 14px;
+}
+
+.carrousel-single-box i{
+    color: #aaaaaa;
+    font-size: 19px;
+    padding:0 8px;
+}
+
+.carrousel-single img{
+    width:70px;
+    height:70px;
+    display: inline;
+    margin:10px 0;
+    border-radius:50%;
+}
+
+.carrousel-single span{
+    color: #aaaaaa;
+}
+
+.telefones-contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:#ffffff;
+    padding:20px 0;
+}
+
+.contato-single {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+
+.contato-single h2 {
+    color:#124265;
+    text-transform: uppercase;
+}
+
+.contato-single p {
+    color:#444;
+    font-size: 14px;
+    margin: 0 0 14px 0;
+}
+
+@media only screen and (max-width: 700px){
+    .diferencial-single{
+        width:100%;
+        margin-bottom: 20px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .logo{
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo-img {
+        width: 80%;
+    }
+
+    .center1 {
+        flex-direction: column;
+    }
+
+    .conquista-single {
+        width: 100%;
+    }
+
+    .conquista-single img{
+        width: 50%;
+    }
+
+    .sobre-empreendedor-img {
+        width: 100%;
+    }
+
+    .sobre-empreendedor-content {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .conteudo-sobre p{
+        width:100%;
+        margin:20px 20px;
+        text-align: justify;
+    }
+
+    .depoimentos-chamada {
+        flex-direction: column;
+    }
+
+    .carrousel {
+        flex-direction: column;
+    }
+
+    .carrousel-single {
+        width: 100%;
+    }
+
+    .telefones-contato {
+        flex-direction: column;
+    }
+}
