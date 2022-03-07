@@ -13,11 +13,7 @@
     flex-wrap: wrap;
 }
 
-html, body {
-    overflow: hidden;
-}
-
-.pop-up {
+/* .pop-up {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -51,7 +47,7 @@ html, body {
     background-color: red;
     border-radius: 100%;
     border: none;
-}
+} */
 
 
 .menu-mobile{
@@ -74,7 +70,7 @@ header{
 }
 
 .logo-img {
-    width: 60%;
+    width: 40%;
 }
 
 .menu{
@@ -114,17 +110,8 @@ Section Main
 */
 
 section.main{
-    background-image: url('img/hero-bg.webp');
-    
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-attachment: fixed;
+    background-color: white;
+    padding-bottom: 5%;
 }
 
 .main__cta{
@@ -173,7 +160,7 @@ section.main{
 
 .diferencial-single{
     border-radius:10px;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(240, 240, 240);
     width: 23%;
     margin-right: 2%;
     padding:50px 20px;
@@ -200,6 +187,7 @@ section.main{
     color:gray;
     font-size: 14px;
     line-height: 30px;
+    text-align: justify;
 }
 
 
@@ -306,7 +294,7 @@ section.conquistas{
 
 section.sobre-empreendedor{
     padding:40px 0;
-    background-color: #e4e4e4;
+    background-color: #ffffff;
 }
 .sobre-empreendedor-img{
     width:50%;
@@ -372,7 +360,7 @@ section.depoimentos .depoimentos-chamada{
 
 .carrousel-single-box{
     padding:20px;
-    background-color:#e2f0ff;
+    background-color:#dbdbdb;
     border-radius:10px;
 }
 
@@ -383,7 +371,7 @@ section.depoimentos .depoimentos-chamada{
 }
 
 .carrousel-single-box i{
-    color: #c9e3f5;
+    color: #aaaaaa;
     font-size: 19px;
     padding:0 8px;
 }
@@ -397,14 +385,14 @@ section.depoimentos .depoimentos-chamada{
 }
 
 .carrousel-single span{
-    color:#ccc;
+    color: #aaaaaa;
 }
 
 .telefones-contato {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color:#e2f0ff;
+    background-color:#ffffff;
     padding:20px 0;
 }
 
@@ -434,20 +422,15 @@ section.depoimentos .depoimentos-chamada{
     .menu{
         display: none;
     }
+
     .logo{
-        width:20%;
+        width:100%;
+        display: flex;
+        justify-content: center;
     }
 
-    .menu-mobile{
-        width:80%;
-        text-align: right;
-        display: block;
-    }
-
-    .menu-mobile i{
-        cursor: pointer;
-        font-size: 23px;
-        margin-top:8px;
+    .logo-img {
+        width: 80%;
     }
 
     .center1 {
@@ -474,6 +457,7 @@ section.depoimentos .depoimentos-chamada{
     .conteudo-sobre p{
         width:100%;
         margin:20px 20px;
+        text-align: justify;
     }
 
     .depoimentos-chamada {
@@ -490,33 +474,5 @@ section.depoimentos .depoimentos-chamada{
 
     .telefones-contato {
         flex-direction: column;
-    }
-}
-
-/* Format info html*/
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-image: url("img/info.jpg");
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: 90%;
-    background-position: center;
-}
-
-@media only screen and (max-width: 700px){ 
-    .div {
-        flex-direction: column;
-    }
-
-    .logo {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
     }
 }
